@@ -1,10 +1,10 @@
-<%= form_with(model: microposst, local: true) do |form| %>
-  <% if microposst.errors.any? %>
+<%= form_with(model: micropost, local: true) do |form| %>
+  <% if micropost.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(microposst.errors.count, "error") %> prohibited this microposst from being saved:</h2>
+      <h2><%= pluralize(micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
 
       <ul>
-      <% microposst.errors.full_messages.each do |message| %>
+      <% micropost.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
